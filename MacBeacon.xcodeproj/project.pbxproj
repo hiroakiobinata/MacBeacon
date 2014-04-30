@@ -18,6 +18,8 @@
 		D98054E31900B5D60097C1F5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98054C21900B5D60097C1F5 /* Cocoa.framework */; };
 		D98054EB1900B5D60097C1F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D98054E91900B5D60097C1F5 /* InfoPlist.strings */; };
 		D98054ED1900B5D60097C1F5 /* MacBeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98054EC1900B5D60097C1F5 /* MacBeaconTests.m */; };
+		D98054F71900B62A0097C1F5 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98054F61900B62A0097C1F5 /* IOBluetooth.framework */; };
+		D98054FA1900B6540097C1F5 /* MBCBeaconAdvertisementData.m in Sources */ = {isa = PBXBuildFile; fileRef = D98054F91900B6540097C1F5 /* MBCBeaconAdvertisementData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		D98054E81900B5D60097C1F5 /* MacBeaconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacBeaconTests-Info.plist"; sourceTree = "<group>"; };
 		D98054EA1900B5D60097C1F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D98054EC1900B5D60097C1F5 /* MacBeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacBeaconTests.m; sourceTree = "<group>"; };
+		D98054F61900B62A0097C1F5 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		D98054F81900B6540097C1F5 /* MBCBeaconAdvertisementData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCBeaconAdvertisementData.h; sourceTree = "<group>"; };
+		D98054F91900B6540097C1F5 /* MBCBeaconAdvertisementData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCBeaconAdvertisementData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98054F71900B62A0097C1F5 /* IOBluetooth.framework in Frameworks */,
 				D98054C31900B5D60097C1F5 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +101,7 @@
 		D98054C11900B5D60097C1F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D98054F61900B62A0097C1F5 /* IOBluetooth.framework */,
 				D98054C21900B5D60097C1F5 /* Cocoa.framework */,
 				D98054E11900B5D60097C1F5 /* XCTest.framework */,
 				D98054C41900B5D60097C1F5 /* Other Frameworks */,
@@ -120,6 +127,8 @@
 				D98054D71900B5D60097C1F5 /* MainMenu.xib */,
 				D98054DA1900B5D60097C1F5 /* Images.xcassets */,
 				D98054C91900B5D60097C1F5 /* Supporting Files */,
+				D98054F81900B6540097C1F5 /* MBCBeaconAdvertisementData.h */,
+				D98054F91900B6540097C1F5 /* MBCBeaconAdvertisementData.m */,
 			);
 			path = MacBeacon;
 			sourceTree = "<group>";
@@ -255,6 +264,7 @@
 			files = (
 				D98054CF1900B5D60097C1F5 /* main.m in Sources */,
 				D98054D61900B5D60097C1F5 /* MBCAppDelegate.m in Sources */,
+				D98054FA1900B6540097C1F5 /* MBCBeaconAdvertisementData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

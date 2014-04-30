@@ -7,9 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <IOBluetooth/IOBluetooth.h>
 
-@interface MBCAppDelegate : NSObject <NSApplicationDelegate>
+#import "MBCBeaconAdvertisementData.h"
+
+@interface MBCAppDelegate : NSObject <NSApplicationDelegate, CBPeripheralManagerDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (strong, nonatomic) CBPeripheralManager *manager;
 
 @end
