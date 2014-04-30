@@ -21,6 +21,7 @@
               measuredPower:(int8_t)power;
 
 
+
 - (NSDictionary *)beaconAdvertisement;
 
 @end
